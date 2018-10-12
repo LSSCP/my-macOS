@@ -1,16 +1,25 @@
 本笔记旨在收录一些能打造高生产力和舒适 macOS 环境的软件。
 
 目录
-- [软件](#%E8%BD%AF%E4%BB%B6)
-    - [生产力](#%E7%94%9F%E4%BA%A7%E5%8A%9B)
-    - [系统](#%E7%B3%BB%E7%BB%9F)
-    - [开发](#%E5%BC%80%E5%8F%91)
-    - [写作](#%E5%86%99%E4%BD%9C)
-    - [功能](#%E5%8A%9F%E8%83%BD)
-    - [非必要](#%E9%9D%9E%E5%BF%85%E8%A6%81)
-- [命令行](#%E5%91%BD%E4%BB%A4%E8%A1%8C)
-- [参考](#%E5%8F%82%E8%80%83)
-- [技巧](#%E6%8A%80%E5%B7%A7)
+
+- [参考](#参考)
+- [软件](#软件)
+    - [生产力](#生产力)
+    - [系统](#系统)
+    - [开发](#开发)
+    - [写作](#写作)
+    - [功能](#功能)
+    - [非必须](#非必须)
+- [命令行](#命令行)
+- [技巧](#技巧)
+
+## 参考
+
+- [Awesome Mac](https://github.com/jaywcjlove/awesome-mac/blob/master/README-zh.md)
+- [open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)
+- [my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
+- [有哪些命令行的软件堪称神器？](https://www.zhihu.com/question/59227720)
+- [磨刀不误砍柴 - 配置适合工作学习的桌面环境](https://juejin.im/post/5ba294ef5188255c775d97c2)
 
 ## 软件
 
@@ -27,6 +36,11 @@
 - 自定义唤醒快捷键 `⌘.`。
 - 搭配 Zsh 使用更佳，可用 [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) 配置。
 - [Zsh Plugins List](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins#git)
+
+[Karabiner](https://pqrs.org/osx/karabiner) - 自定义键盘映射
+
+- 可以将键盘映射成你想要的任意样子，还支持外接键盘。
+- 我将 `caps lock` 映射成了 Hyper 键，用于唤醒常用软件和导航。如何设置可以参考 [这里](https://github.com/Vonng/Capslock)
 
 [Contexts](https://contexts.co/) - 窗口切换器（[软件介绍](https://www.zhihu.com/question/19897698/answer/376711117)）
 
@@ -57,7 +71,7 @@
 [Reeder](http://reederapp.com/) - RSS 阅读器
 
 - 个人选择 [inoreader](https://www.inoreader.com/) 服务。
-- 配合 [RSSHub](https://github.com/DIYgod/RSSHub)，几乎可以订阅任何网站。
+- 配合 [RSSHub](https://github.com/DIYgod/RSSHub) 和 [即刻](https://www.ruguoapp.com/)，几乎可以订阅任何网站。
 
 ### 系统
 
@@ -102,7 +116,7 @@
 - 可用 VSCode 插件 [Markdown TOC](https://marketplace.visualstudio.com/items?itemName=AlanWalk.markdown-toc) 自动生成目录。
 - `tree -N` 可以生成文件目录树，在 GitHub 上表示项目结构时常用到。
 - [shields.io](https://shields.io) 可以在 Markdown 中插入 Metadata 标签。
-- 中文写作排版指导： [document-style-guide](https://github.com/ruanyf/document-style-guide) 和 [中文文案排版指北](https://github.com/mzlogin/chinese-copywriting-guidelines) 
+- 中文写作排版指导： [document-style-guide](https://github.com/ruanyf/document-style-guide) 和 [中文文案排版指北](https://github.com/mzlogin/chinese-copywriting-guidelines)。
 
 [Day One](http://dayoneapp.com/) -  日记
 
@@ -130,13 +144,15 @@
 
 [欧陆词典](https://www.eudic.net/) - 英文词典
 
+[proxyee-down](https://github.com/proxyee-down-org/proxyee-down) - HTTP 高速下载器，可突破百度云的限速
+
 [Aria2GUI](https://github.com/yangshun1029/aria2gui) - 下载工具 Aria2 的 GUI 客户端
 
 [carbon](https://github.com/dawnlabs/carbon) - 生成展示代码片段的精美图片
 
 - 也可以 [在线生成](https://carbon.now.sh)
 
-### 非必要
+### 非必须
 
 这些软件在特定场景下可能用得到，但不是平时必备的。
 
@@ -156,6 +172,8 @@
 
 [PPRows](https://github.com/jkpang/PPRows) - 统计代码数量
 
+[TabPlus](https://tableplus.io/) - 界面精美的数据库管理软件（[软件介绍](https://www.waerfa.com/tableplus-review)）
+
 ## 命令行
 
 主要是一些第三方命令行工具，默认的 UNIX/Linux 命令在这里就不列举了。
@@ -166,21 +184,13 @@
 - [mas](https://github.com/mas-cli/mas) - 用 CLI 方式操作 Mac App Store。[介绍](https://sspai.com/post/43239)。
 - [tldr](https://github.com/tldr-pages/tldr) - 速查命令。同类的还有 [cheat.sh](https://github.com/chubin/cheat.sh) 和 [Rico's cheatsheets](https://devhints.io/)。
 - [fd](https://github.com/sharkdp/fd) - 简单、快速、友好的 `find` 替代命令。
-- [jq](https://github.com/stedolan/jq) - JSON 处理器。
+- [jq](https://github.com/stedolan/jq) - JSON 处理。
 - [bat](https://github.com/sharkdp/bat) - `cat` 的加强版，带高亮和分页，并且与 Git 集成。
 - [thefuck](https://github.com/nvbn/thefuck) - 打一句 `fuck` 就会自动更正命令。
 - [httpie](https://httpie.org/) - 非常友好的 HTTP 客户端。
 - [htop](https://github.com/hishamhm/htop) - 提供更美观、更方便的进程监控工具。同类的 [glances](https://github.com/nicolargo/glances) 也不错。
 - [screenfetch](https://github.com/KittyKatt/screenFetch) - 打印系统信息。
 - [tmux](https://github.com/tmux/tmux) - 终端复用工具。
-
-## 参考
-
-- [Awesome Mac](https://github.com/jaywcjlove/awesome-mac/blob/master/README-zh.md)
-- [open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps)
-- [my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
-- [有哪些命令行的软件堪称神器？](https://www.zhihu.com/question/59227720)
-- [磨刀不误砍柴 - 配置适合工作学习的桌面环境](https://juejin.im/post/5ba294ef5188255c775d97c2)
 
 ## 技巧
 
